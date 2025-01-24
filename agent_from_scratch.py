@@ -16,6 +16,8 @@ def build_prompt(q):
         scores = [np.dot(q_vec, m) for m in long_mem]
         best_idx = np.argmax(scores)
         prompt += f"\nRelated memory:\n{long_mem[best_idx]}"
+    # Chain-of-thought
+    prompt += 'please think step by step'
     return prompt + f"\nNew question: {q}"
 
 def get_api_response(prompt):
