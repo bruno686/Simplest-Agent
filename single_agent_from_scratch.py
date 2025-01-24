@@ -100,7 +100,7 @@ def agent(q):
     """
     prompt = build_prompt(q)
     resp = get_api_response(prompt)
-    print(f"Model response: {resp}")  # Debugging step to see what the model returns
+    print(f"LLM response: {resp}")  # Debugging step to see what the model returns
 
     tool_request = extract_tool_request(resp)
 
@@ -109,7 +109,8 @@ def agent(q):
         params = tool_request.get("params")
         if tool_name and params:
             tool_result = call_tool(tool_name, params)
-            return f"Tool result: {tool_result}"
+            # return f"Tool result: {tool_result}"
+            resp = get_api_response(f"Organize the tool results: {tool_result} according to the question: {q}.")
 
     # If no tool was requested, just return the model's response
     update_memories(q, resp)
