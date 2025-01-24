@@ -5,5 +5,5 @@
 - [x] : Memory
 - [x] : Tooling (Web search)
 - [x] : Planning (Reflection, CoT)
+- [x] : Multi-agent
 - [ ] : Multimodal LLM
-- [ ] : Multi-agent
