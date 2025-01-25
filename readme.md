@@ -6,4 +6,5 @@
 - [x] : Tooling (Web search)
 - [x] : Planning (Reflection, CoT)
 - [x] : Multi-agent
-- [ ] : Multimodal LLM
+
+Competent or Cooperative?

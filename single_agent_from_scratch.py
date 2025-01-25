@@ -1,3 +1,5 @@
+# Zhuangzhuang He@1/24/2025
+
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 import numpy as np
