@@ -6,8 +6,8 @@ import numpy as np
 import json
 import requests
 from langchain_community.tools import DuckDuckGoSearchRun
-
-key = "sk-4ba79f849b3941dba380fa0d3641055d"
+# setting your key
+key = "" 
 short_mem = []  # Keep last 2 dialogues
 long_mem = []   # Store all vectors
 encoder = SentenceTransformer('all-MiniLM-L6-v2')
