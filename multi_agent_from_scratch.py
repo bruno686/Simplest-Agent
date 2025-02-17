@@ -2,7 +2,8 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
-key = "sk-4ba79f849b3941dba380fa0d3641055d"
+# setting your key
+key = "" 
 
 class DeepSeekAgent:
     def __init__(self, name, system_prompt=None, short_mem_size=3):
