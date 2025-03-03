@@ -7,4 +7,6 @@
 - [x] : Planning (Reflection, CoT)
 - [x] : Multi-agent
 
-Competent or Cooperative?
+## Contributing
+
+* Feel free to reach out me to discuss more ideas!
